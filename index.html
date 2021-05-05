@@ -85,7 +85,7 @@
               Lorem ipsum is simply dummy text of the printing and typesetting.
               Lorem Ipsum has been the industry’s standard dummy.
             </p>
-            <a href="#products" class="btn">View More</a>
+            <a href="#products" class="button">View More</a>
           </div>
           <img
             class="img_1"
@@ -162,6 +162,106 @@
             <h3 class="page-subtitle">Happy Customers</h3>
           </header>
           <div id="testimonial-slider" class="owl-carousel">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <div class="item-review">
+                    <div class="icon-quotes">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="description">
+                      <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse assumenda eligendi, officiis quasi veniam. Maiores in molestiae voluptatum perspiciatis quis, quibusdam, ipsam vel ab voluptatibus libero rem minima reprehenderit.</p>
+                    </div>
+                    <div class="testimonial-img">
+                      <img src="" alt="image">
+                    </div>
+                    <div class="testimonial-title">
+                      <h3 class="name">insert name</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="item-review">
+                    <div class="icon-quotes">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="description">
+                      <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse assumenda eligendi, officiis quasi veniam. Maiores in molestiae voluptatum perspiciatis quis, quibusdam, ipsam vel ab voluptatibus libero rem minima reprehenderit.</p>
+                    </div>
+                    <div class="testimonial-img">
+                      <img src="" alt="image">
+                    </div>
+                    <div class="testimonial-title">
+                      <h3 class="name">insert name</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="item-review">
+                    <div class="icon-quotes">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="description">
+                      <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse assumenda eligendi, officiis quasi veniam. Maiores in molestiae voluptatum perspiciatis quis, quibusdam, ipsam vel ab voluptatibus libero rem minima reprehenderit.</p>
+                    </div>
+                    <div class="testimonial-img">
+                      <img src="" alt="image">
+                    </div>
+                    <div class="testimonial-title">
+                      <h3 class="name">insert name</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="item-review">
+                    <div class="icon-quotes">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="description">
+                      <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse assumenda eligendi, officiis quasi veniam. Maiores in molestiae voluptatum perspiciatis quis, quibusdam, ipsam vel ab voluptatibus libero rem minima reprehenderit.</p>
+                    </div>
+                    <div class="testimonial-img">
+                      <img src="" alt="image">
+                    </div>
+                    <div class="testimonial-title">
+                      <h3 class="name">insert name</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="item-review">
+                    <div class="icon-quotes">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="description">
+                      <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse assumenda eligendi, officiis quasi veniam. Maiores in molestiae voluptatum perspiciatis quis, quibusdam, ipsam vel ab voluptatibus libero rem minima reprehenderit.</p>
+                    </div>
+                    <div class="testimonial-img">
+                      <img src="" alt="image">
+                    </div>
+                    <div class="testimonial-title">
+                      <h3 class="name">insert name</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="item-review">
+                    <div class="icon-quotes">
+                      <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="description">
+                      <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur esse assumenda eligendi, officiis quasi veniam. Maiores in molestiae voluptatum perspiciatis quis, quibusdam, ipsam vel ab voluptatibus libero rem minima reprehenderit.</p>
+                    </div>
+                    <div class="testimonial-img">
+                      <img src="" alt="image">
+                    </div>
+                    <div class="testimonial-title">
+                      <h3 class="name">insert name</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- The content for the testimonials has been created using JavaScript. 
                 Please go to the inspect tool to see which classes were used to build the slider, 
                 and use the classnames given to style them in your CSS sheet -->
@@ -185,7 +285,9 @@
             <!-- Please insert location, contact numbers and email elements here -->
           </div>
           <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
-          <form id="contact-form">
+         <div id="contact-form">
+          <form action="https://formspree.io/f/mdoyapge" method="POST">
+            <label for="name">Name</label>
             <input
               class="contact-input"
               type="text"
@@ -194,22 +296,25 @@
               placeholder="Name"
               required
             />
+            <label for="phone">Phone</label>
             <input
               class="contact-input"
               type="tel"
               name="contact_no"
               id="contact_no"
-              placeholder="Contact No"
+              placeholder="Contact Number"
               required
             />
+            <label for="email">Email</label>
             <input
               class="contact-input"
               type="email"
-              name="email"
+              name="_replyto"
               id="email"
               placeholder="Email"
               required
             />
+            <label for="message">Message</label>
             <textarea
               class="contact-input"
               name="message"
@@ -218,6 +323,7 @@
             ></textarea>
             <button class="button" type="submit">Submit Information</button>
           </form>
+         </div>
         </div>
       </div>
     </div>
@@ -248,17 +354,5 @@
 
     <!-- My Javascript File -->
     <script src="./scripts.js"></script>
-    <script>
-      // $(document).ready(function () {
-      //   $(".owl-carousel").owlCarousel({
-      //     items: 2,
-      //     margin: 50,
-      //     loop: true,
-      //     stagePadding: 100,
-      //     dots: false,
-      //     autoplay: true,
-      //   });
-      // });
-    </script>
   </body>
 </html>
