@@ -236,6 +236,7 @@ h4 {
   color: #222;
   flex-direction: column;
   width: 200px;
+  height: 500px;
   margin: 50px;
   padding: 20px;
   border: #222;
@@ -243,7 +244,8 @@ h4 {
 }
 
 .contact-input {
-  width: 100%;
+  width: 200%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
