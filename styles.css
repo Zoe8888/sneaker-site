@@ -106,6 +106,7 @@ h1 {
 body {
   font-family: sans-serif;
   background-image: url(images/banner.jpg);
+  background-size: cover;
 }
 
 .description {
@@ -138,6 +139,7 @@ body {
 .button:hover {
   color: white;
   background-color: #ed2d34;
+  border: solid;
 }
 
 #homePage {
@@ -194,11 +196,17 @@ h4 {
 .text-counter {
   font-size: 20px;
 }
+
 .product-img {
   height: 300px;
   width: 300px;
   object-fit: cover;
   object-position: center;
+}
+
+.product h3 {
+  font-size: 30px;
+  margin: 20px;
 }
 
 #product-slider {
@@ -227,25 +235,67 @@ h4 {
   background-color: #ed2d34;
 }
 
+#testiomonialPage {
+  background-image: url(/images/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.page-header-container {
+  text-align: center;
+}
+
+.testimonial {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  max-width: 75px;
+}
+
+#contactPage {
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: sans-serif;
+}
+.page-header-cntainer {
+  margin-right: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 #contact-form {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 5% 10%;
   background-color: white;
   color: #222;
   flex-direction: column;
   width: 200px;
   height: 500px;
-  margin: 50px;
+  margin-left: 0px;
+  margin-top: 300px;
   padding: 20px;
   border: #222;
   outline: #222;
 }
 
 .contact-input {
-  width: 200%;
-  height: 500px;
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,6 +305,38 @@ h4 {
   outline: none;
 }
 
+#message {
+  padding-top: 30px;
+  margin-bottom: 50px;
+  height: 150px;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.contact-details-heading {
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+.contact-details-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+.contact-details-description {
+  /*margin-bottom: 60px;*/
+  font-size: 20px;
+}
+
+.details {
+  font-size: 20px;
+}
+
 label {
   display: none;
 }
@@ -262,7 +344,7 @@ label {
 @media screen and (max-width: 767px) {
   body {
     text-align: center;
-    overflow-y: hidden !important;
+    overflow-y: hidden;
   }
 }
 
@@ -270,9 +352,22 @@ label {
   transition: all 0.25s ease 0s;
   width: 800px;
   transform: translate3d();
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90px;
+  max-width: 100%;
   margin-right: 10px;
+  font-size: 20px;
+}
+
+.owl-carousel {
+  overflow: hidden;
 }
