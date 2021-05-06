@@ -156,38 +156,80 @@ body {
   align-items: center;
 }
 .icon {
-  top: 50px;
-  right: 70px;
-  position: fixed;
+  top: 20px;
+  right: 30px;
+  position: absolute;
 }
 
 .home-details {
   width: 30%;
 }
 
-h2 {
+.page-heading {
   color: rgb(87, 84, 84);
+  margin-top: 60px;
+  margin-left: 60px;
+  font-size: 40px;
 }
 
-h3 {
+.page-subtitle {
   color: #ed2d34;
+  margin-left: 60px;
+  font-size: 40px;
 }
 
 h4 {
   color: rgb(87, 84, 84);
-  height: 50rem;
 }
 
-.product img {
+.counter {
+  color: rgb(87, 84, 84);
+}
+
+.number-counter {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.text-counter {
+  font-size: 20px;
+}
+.product-img {
   height: 300px;
   width: 300px;
   object-fit: cover;
   object-position: center;
 }
 
+#product-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.product-button {
+  border: solid;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  margin-top: 20px;
+  background-color: white;
+  color: rgb(87, 84, 84);
+  transition: 0.3s ease-in;
+}
+
+.product-button:hover {
+  color: white;
+  background-color: #ed2d34;
+}
+
 #contact-form {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: center;
   padding: 5% 10%;
   background-color: white;
@@ -218,8 +260,8 @@ label {
 @media screen and (max-width: 767px) {
   body {
     text-align: center;
-    overflow-y: hidden!important;
-}
+    overflow-y: hidden !important;
+  }
 }
 
 .owl-stage {
