@@ -69,39 +69,64 @@
   <body>
     <div id="fullpage">
       <div class="section">
-        <!-- Add classes where necessary and style the section appropriately -->
         <div class="icon">
           <i class="fab fa-facebook-f"></i> / <i class="fab fa-twitter"></i> /
           <i class="fab fa-linkedin-in"></i> /
           <i class="fab fa-instagram"></i>
         </div>
-        <div id="homePage" class="content">
-          <div class="social"></div>
-          <div class="home-details">
-            <h1 class="home-heading">
-              Premium <span class="red">Air Force 1 Sneakers</span>
-            </h1>
-            <p class="description">
-              Lorem ipsum is simply dummy text of the printing and typesetting.
-              Lorem Ipsum has been the industry’s standard dummy.
-            </p>
-            <a href="#products" class="btn">View More</a>
+        <!-- Add classes where necessary and style the section appropriately -->
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          <div id="homePage" class="content">
+            <div class="social"></div>
+            <div class="home-details">
+              <h1 class="home-heading">
+                Premium <span class="red">Air Force 1 Sneakers</span>
+              </h1>
+              <p class="description">
+                Lorem ipsum is simply dummy text of the printing and
+                typesetting. Lorem Ipsum has been the industry’s standard dummy.
+              </p>
+              <a href="#products" class="button">View More</a>
+            </div>
+            <img
+              class="img_1"
+              src="images/red-air-force.jpg"
+              alt="Sneaker"
+              data-tilt
+            />
           </div>
-          <img
-            class="img_1"
-            src="images/red-air-force.jpg"
-            alt="Sneaker"
-            data-tilt
-          />
         </div>
       </div>
       <div class="section">
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i> / <i class="fab fa-twitter"></i> /
+          <i class="fab fa-linkedin-in"></i> /
+          <i class="fab fa-instagram"></i>
+        </div>
         <!-- Add classes where necessary and style the section appropriately -->
         <div id="productPage" class="content">
           <header class="page-header-container">
             <div>
               <h2 class="page-heading">Premium</h2>
-              <h3 class="page-subtitle">Shoe Collection</h3>
+              <h2 class="page-subtitle">Shoe Collection</h2>
+            </div>
+            <div class="counter">
+              <div>
+                <h2 class="number-counter">555</h2>
+                <p class="text-counter">Shoes Delivered</p>
+              </div>
+              <div>
+                <h2 class="number-counter">707</h2>
+                <p text-counter>New Artciles</p>
+              </div>
+              <div>
+                <h2 class="number-counter">888</h2>
+                <p class="text-counter">Happy Customers</p>
+              </div>
             </div>
             <div>
               <!-- Add HTML for the numbers here. They DO NOT have to animate -->
@@ -113,28 +138,36 @@
             <div class="product">
               <img src="images/pixel.jpg" alt="Sneaker" />
               <h4>Nike Air Force 1 Pixel</h4>
-              <button onclick="openModal()">View Detail</button>
+              <button class="product-button" onclick="openModal()">
+                View Detail
+              </button>
             </div>
             <!-- Product Item -->
             <div class="product">
               <img src="images/red-air-force.jpg" alt="Sneaker" />
-              <h4>Red Air Force 1</h4>
-              <button onclick="openModal()">View Detail</button>
-            </div>
-            <!-- Product Item -->
-            <div class="product">
-              <img src="images/pine-green.jpeg" alt="Sneaker" />
-              <h4>White & Pine Green Air Force 1</h4>
-              <button onclick="openModal()">View Detail</button>
+              <h3>Red Air Force 1</h3>
+              <button class="product-button" onclick="openModal()">
+                View Detail
+              </button>
             </div>
             <!-- Product Item -->
             <div class="product">
               <img
-                src="images/nike-air-force-1-pistachio-frost-.jpg"
+                src="images/nike_Air_Force_1_07_White_White_Pine_Green.jpg"
                 alt="Sneaker"
               />
-              <h4>Pistaccio Frost Air Force 1</h4>
-              <button onclick="openModal()">View Detail</button>
+              <h3>Pine Green Air Force 1</h3>
+              <button class="product-button" onclick="openModal()">
+                View Detail
+              </button>
+            </div>
+            <!-- Product Item -->
+            <div class="product">
+              <img src="images/pistachio-frost" alt="Sneaker" />
+              <h3>Pistaccio Frost Air Force 1</h3>
+              <button class="product-button" onclick="openModal()">
+                View Detail
+              </button>
             </div>
             <!-- Product Item -->
             <div class="product">
@@ -142,8 +175,10 @@
                 src="images/nike-air-force-1-shadow-pastel-ci0919-106.jpg"
                 alt="Sneaker"
               />
-              <h4>Pastel Air Force 1</h4>
-              <button onclick="openModal()">View Detail</button>
+              <h3>Pastel Air Force 1</h3>
+              <button class="product-button" onclick="openModal()">
+                View Detail
+              </button>
             </div>
           </div>
           <div id="modal">
@@ -188,7 +223,12 @@
             <!-- Please insert location, contact numbers and email elements here -->
           </div>
           <!-- Create new form on FORMSPREE and insert ULR in the ACTION ATTRIBUTE -->
-          <form id="contact-form">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mdoyapge"
+            method="POST"
+          >
+            <label for="name">Name</label>
             <input
               class="contact-input"
               type="text"
@@ -197,6 +237,7 @@
               placeholder="Name"
               required
             />
+            <label for="phone">Phone</label>
             <input
               class="contact-input"
               type="tel"
@@ -205,6 +246,7 @@
               placeholder="Contact No"
               required
             />
+            <label for="email">Email</label>
             <input
               class="contact-input"
               type="email"
@@ -213,6 +255,7 @@
               placeholder="Email"
               required
             />
+            <label for="message">Message</label>
             <textarea
               class="contact-input"
               name="message"
