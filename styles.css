@@ -95,6 +95,7 @@ h1 {
   color: rgb(87, 84, 84);
   font-weight: bold;
   padding-bottom: 10px;
+  font-size: 3rem;
 }
 
 .red {
@@ -118,6 +119,7 @@ body {
   padding-bottom: 40px;
   color: rgb(87, 84, 84);
   size: 80px;
+  font-size: 20px;
 }
 
 /*.social {
@@ -128,8 +130,9 @@ body {
 
 .button {
   border: solid;
-  border-radius: 30px;
+  border-radius: 40px;
   padding: 10px;
+  font-size: 20px;
   text-decoration: none;
   margin-left: 20px;
   background-color: white;
@@ -173,21 +176,24 @@ body {
 
 .page-heading {
   color: rgb(87, 84, 84);
-  margin-top: 60px;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .page-subtitle {
   color: #ed2d34;
   left: 200px;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: bold;
   display: flex;
   flex-direction: row;
 }
+
 .product-header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
 #productPage {
@@ -203,24 +209,23 @@ h4 {
 .counter {
   color: rgb(87, 84, 84);
   display: flex;
+  text-align: center;
   flex-direction: row;
+  font-size: 15px;
 }
 
 .number-counter {
-  margin-top: 60px;
-  font-size: 30px;
-  flex-direction: column;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .text-counter {
   font-size: 20px;
-  flex-direction: column;
-  margin: 30px;
+  margin: 20px;
 }
 
 .product-img {
-  height: 300px;
-  width: 300px;
   object-fit: cover;
   object-position: center;
 }
@@ -228,18 +233,20 @@ h4 {
 .product h3 {
   font-size: 25px;
   margin: 20px;
+  color: rgb(87, 84, 84);
 }
 
 #product-slider {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
 }
 
 .product-button {
   border: solid;
-  border-radius: 30px;
+  border-radius: 40px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,7 +287,7 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 30vh;
+  margin-top: 10vh;
 }
 
 .testimonial {
@@ -289,7 +296,8 @@ h4 {
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
-  max-width: 500px;
+  max-width: 400px;
+  margin-right: 40px;
 }
 
 .testimonial-img {
@@ -307,37 +315,33 @@ h4 {
   font-family: sans-serif;
 }
 
-.page-header-cntainer {
-  margin-right: 80px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
 #contact-form {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
   align-items: center;
-  background-color: white;
-  color: #222;
+  background-color: black;
+  color: white;
   flex-direction: column;
   width: 200px;
   height: 500px;
   margin-left: 0px;
-  margin-top: 300px;
+  margin-top: 20px;
   padding: 20px;
-  border: #222;
+  border: none;
   outline: #222;
+  right: 30px;
 }
 
 .contact-input {
-  width: 500px;
+  width: 400px;
   height: 50px;
   font-size: 20px;
+  color: rgb(87, 84, 84);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  background: black;
   padding: 5% 10%;
   border: none;
   outline: none;
@@ -354,25 +358,49 @@ h4 {
   margin-right: 20px;
 }
 
+.icons {
+  bottom: 1px;
+  left: 10px;
+}
+
+.contact-page-heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  font-size: 45px;
+  color: rgb(87, 84, 84);
+}
+
+.contact-page-heading span {
+  color: #ed2d34;
+}
+
 .contact-details-heading {
   font-size: 25px;
   margin-bottom: 35px;
+  left: 5px;
+  color: rgb(87, 84, 84);
 }
 
 .contact-details-container {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-left: 200px;
+  margin-left: 20px;
+  max-width: 300px;
+  color: rgb(87, 84, 84);
 }
 
 .contact-details-description {
-  /*margin-bottom: 60px;*/
-  font-size: 20px;
+  font-size: 2.5vh;
+  margin-bottom: 25px;
 }
 
 .details {
-  font-size: 20px;
+  font-size: 22px;
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: row;
 }
 
 label {
@@ -410,10 +438,14 @@ label {
 .owl-carousel {
   overflow: hidden;
 }
+
 .contact-info {
   display: flex;
   flex-direction: column;
 }
+
 #product-slider img {
-  max-height: 600px;
+  max-height: 500px;
+  max-width: 400px;
 }
+
