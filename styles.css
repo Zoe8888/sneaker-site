@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /* CSS RESET */
 * {
   margin: 0;
@@ -95,6 +99,7 @@ h1 {
   color: rgb(87, 84, 84);
   font-weight: bold;
   padding-bottom: 10px;
+  font-size: 3.3rem;
 }
 
 .red {
@@ -104,7 +109,7 @@ h1 {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   background-image: url(images/banner.jpg);
   background-size: cover;
 }
@@ -118,18 +123,14 @@ body {
   padding-bottom: 40px;
   color: rgb(87, 84, 84);
   size: 80px;
+  font-size: 30px;
 }
-
-/*.social {
-  width: 100%;
-  height: 100%;
-  margin-left: 60px;
-}*/
 
 .button {
   border: solid;
-  border-radius: 30px;
+  border-radius: 40px;
   padding: 10px;
+  font-size: 30px;
   text-decoration: none;
   margin-left: 20px;
   background-color: white;
@@ -153,6 +154,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .img_1 {
@@ -171,23 +173,31 @@ body {
   width: 30%;
 }
 
+.page-header-container {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+}
+
 .page-heading {
   color: rgb(87, 84, 84);
-  margin-top: 60px;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .page-subtitle {
   color: #ed2d34;
   left: 200px;
-  font-size: 40px;
+  font-size: 50px;
+  font-weight: bold;
   display: flex;
   flex-direction: row;
 }
+
 .product-header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 10px;
 }
 
 #productPage {
@@ -203,24 +213,23 @@ h4 {
 .counter {
   color: rgb(87, 84, 84);
   display: flex;
+  text-align: center;
   flex-direction: row;
+  font-size: 15px;
 }
 
 .number-counter {
-  margin-top: 60px;
-  font-size: 30px;
-  flex-direction: column;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .text-counter {
   font-size: 20px;
-  flex-direction: column;
-  margin: 30px;
+  margin: 20px;
 }
 
 .product-img {
-  height: 300px;
-  width: 300px;
   object-fit: cover;
   object-position: center;
 }
@@ -228,18 +237,21 @@ h4 {
 .product h3 {
   font-size: 25px;
   margin: 20px;
+  color: rgb(87, 84, 84);
+  font-family: "Montserrat", sans-serif;
 }
 
 #product-slider {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
 }
 
 .product-button {
   border: solid;
-  border-radius: 30px;
+  border-radius: 40px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,14 +268,14 @@ h4 {
   background-color: #ed2d34;
 }
 
-#testiomonialPage {
+#testimonialPage {
   background-image: url(/images/banner.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-top: 50px;
 }
 
 #testimonialPage h2 {
@@ -280,7 +292,10 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 30vh;
+  margin-top: 300px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
 }
 
 .testimonial {
@@ -288,8 +303,17 @@ h4 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 100px;
-  max-width: 500px;
+  margin-top: 150x;
+  max-width: 400px;
+  margin-right: 40px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(87, 84, 84);
+}
+
+.page-heading-1 {
+  color: rgb(87, 84, 84);
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .testimonial-img {
@@ -298,88 +322,23 @@ h4 {
   margin-top: 50px;
 }
 
-#contactPage {
-  background-image: url(/images/banner.jpg);
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: sans-serif;
+.fab {
+  color: #464646;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 15px;
 }
 
-.page-header-cntainer {
-  margin-right: 80px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+.fab:hover {
+  background: #ed2d34;
+  color: white;
+  border-radius: 50px;
+  animation-delay: 0.8s;
+  font-size: 16px;
+  padding: 15px 15px;
 }
 
-#contact-form {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: white;
-  color: #222;
-  flex-direction: column;
-  width: 200px;
-  height: 500px;
-  margin-left: 0px;
-  margin-top: 300px;
-  padding: 20px;
-  border: #222;
-  outline: #222;
-}
-
-.contact-input {
-  width: 500px;
-  height: 50px;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  padding: 5% 10%;
-  border: none;
-  outline: none;
-}
-
-#message {
-  padding-top: 30px;
-  margin-bottom: 50px;
-  height: 150px;
-}
-
-.contact-icon {
-  font-size: 2rem;
-  margin-right: 20px;
-}
-
-.contact-details-heading {
-  font-size: 25px;
-  margin-bottom: 35px;
-}
-
-.contact-details-container {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  margin-left: 200px;
-}
-
-.contact-details-description {
-  /*margin-bottom: 60px;*/
-  font-size: 20px;
-}
-
-.details {
-  font-size: 20px;
-}
-
-label {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1553) {
   body {
     text-align: center;
     overflow-y: hidden;
@@ -400,7 +359,10 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
+  margin: 0;
+  padding: 0;
   width: 90px;
   max-width: 100%;
   margin-right: 10px;
@@ -410,10 +372,85 @@ label {
 .owl-carousel {
   overflow: hidden;
 }
-.contact-info {
-  display: flex;
-  flex-direction: column;
-}
+
 #product-slider img {
-  max-height: 600px;
+  max-height: 500px;
+  max-width: 400px;
+}
+
+#modal button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+}
+
+.modal-images {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.large-modal-img {
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+.small-modal-img {
+  margin-top: 20px;
+  width: 150px;
+}
+
+.small-modal-imgS {
+  display: flex;
+}
+
+#modal h3 {
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+
+#modal h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 0;
+}
+
+#modal p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.modal-product {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.sizes {
+  display: flex;
+  flex-direction: row;
+}
+
+.size {
+  margin-right: 30px;
+}
+
+#shoe-size {
+  margin-right: 50px;
+}
+
+.quantity {
+  display: flex;
+}
+
+.modal-product color {
+  display: flex;
+}
+
+colors {
+  margin-left: 55px;
 }
