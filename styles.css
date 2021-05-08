@@ -99,7 +99,11 @@ h1 {
   color: rgb(87, 84, 84);
   font-weight: bold;
   padding-bottom: 10px;
+<<<<<<< HEAD
   font-size: 3.3rem;
+=======
+  font-size: 3rem;
+>>>>>>> 917acf3ea01f9a27b495fd67812e7ba5f573abde
 }
 
 .red {
