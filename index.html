@@ -66,6 +66,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./modal.css">
   </head>
   <body>
     <div id="fullpage">
@@ -183,7 +184,7 @@
               </button>
             </div>
           </div>
-          <div id="modal">
+           <div id="modal">
             <div class="modal-images">
               <img
                 class="large-modal-img"
@@ -191,11 +192,6 @@
                 alt="Sneaker"
               />
               <div class="small-modal-imgs">
-                <img
-                  class="small-modal-img"
-                  src="images/red-air-force.jpg"
-                  alt="Sneaker"
-                />
                 <img
                   class="small-modal-img"
                   src="images/pine-green.jpeg"
@@ -212,7 +208,7 @@
                   alt="Sneaker"
                 />
               </div>
-              <div>
+              <div class="modal-info">
                 <h4>Articles</h4>
                 <h3>Pixel Air Force 1</h3>
                 <p>
@@ -241,28 +237,25 @@
                 </div>
                 <div class="red">
                   Color:
-                  <div class="colors">
-                    <span class="color color-1"></span>
-                    <span class="color color-2"></span>
-                    <span class="color color-3"></span>
-                  </div>
+                </div>
+                <div class="colors">
+                  <div class="color color-1"></div>
+                  <div class="color color-2"></div>
+                  <div class="color color-3"></div>
                 </div>
               </div>
               <div class="modal-product price">$499</div>
-              <a href="#">Purchase</a>
+              <a class="product-button" href="#">Purchase</a>
             </div>
-            <h2>Modal Content</h2>
             <!-- Button to close modal. Please style appropriately -->
             <button onclick="openModal()">
               <i class="fas fa-times fa-2x close"></i>
             </button>
             <div class="arrows">
-              <span><i class="fas fa-chevron-left"></i></span>
-              <span><i class="fas fa-chevron-right"></i></span>
+              <i class="fas fa-chevron-circle-left fa-3x"></i>
+              <i class="fas fa-chevron-circle-right fa-3x"></i>
             </div>
           </div>
-        </div>
-      </div>
       <div class="section">
         <div id="testimonialPage" class="content">
           <div class="icon">
